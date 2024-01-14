@@ -1,5 +1,5 @@
 -- Lista de membros autorizados
-local membros_autorizados = {"EspacialCar", "NoobdoRodox", "Nick3"}
+local membros_autorizados = {"CarlosXDGM", "NoobdoRodox", "Nick3"}
 
 -- Obtém o nome do jogador no jogo
 local jogador = game.Players.LocalPlayer
