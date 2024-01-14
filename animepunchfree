@@ -1,5 +1,5 @@
 -- Lista de membros autorizados
-local membros_autorizados = {"CarlosXDGM", "NoobdoRodox", "Nick3"}
+local membros_autorizados = {"EspacialCar", "Nick2", "Nick3"}
 
 -- Obtém o nome do jogador no jogo
 local jogador = game.Players.LocalPlayer
@@ -8,11 +8,11 @@ local nome_do_jogador = jogador.Name
 -- Função para verificar se o jogador está na lista de membros autorizados
 local function jogadorEstaAutorizado()
     for _, membro in ipairs(membros_autorizados) do
+        print("Comparando", nome_do_jogador, membro)
         if nome_do_jogador == membro then
             return true
         end
     end
-    return false
 end
 
 -- Lógica principal
