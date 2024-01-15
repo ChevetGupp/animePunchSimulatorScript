@@ -12,7 +12,7 @@ function getClick()
         spawn(function()
             local args = {
                 [1] = "Click",
-                [2] = true
+                [2] = false
             }
             
             game:GetService("ReplicatedStorage").ClickEvent:FireServer(unpack(args))
