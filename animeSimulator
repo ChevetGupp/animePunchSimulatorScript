@@ -1,10 +1,10 @@
 -- Lista de membros autorizados
-local membros_autorizados = {"EspacialCar", "NoobdoRodox", "Nick3"}
+local membros_autorizados = {"EspacialCar", "NoobdoRodox"}
 
 -- Obtém o nome do jogador no jogo
 local jogador = game.Players.LocalPlayer
 local nome_do_jogador = jogador.Name
-local getgenv().autoClick = false
+getgenv().autoClick = false
 
 
 function getClick()
@@ -19,21 +19,6 @@ function getClick()
             wait(0.01)
         end)
     end
-end
-
-function collectRewards()
-    local args = {
-        [1] = "Reward1"
-    }
-    
-    game:GetService("ReplicatedStorage").GameClient.Events.RemoteEvent.ClaimGift:FireServer(unpack(args))
-    wait(120)
-    local args = {
-        [1] = "Reward2"
-    }
-    
-    game:GetService("ReplicatedStorage").GameClient.Events.RemoteEvent.ClaimGift:FireServer(unpack(args))
-    wait(180)
 end
 
 
@@ -84,14 +69,6 @@ if jogadorEstaAutorizado() then
                 getClick();
             end
         end    
-    })
-
-    PlayerSection:AddToggle({
-        Name = "Auto Rebirth",
-        Default = false,
-        Callback = function(Value)
-            print("Em Desenvolvimento")
-        end
     })
 
     --Player Tab End--
