@@ -16,7 +16,7 @@ function getClick()
             }
             
             game:GetService("ReplicatedStorage").ClickEvent:FireServer(unpack(args))
-            wait(0.01)
+            wait(1)
         end)
     end
 end
